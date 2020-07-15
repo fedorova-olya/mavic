@@ -51,6 +51,12 @@
   }
 }
 
+.top__img,
+.specification__img {
+  width: 660px;
+  height: 200px;
+}
+
 .top {
   background-image: url('../images/top-bg.jpg');
 
@@ -91,6 +97,7 @@
     margin: 25px 0 35px;
     max-width: 325px;
   }
+
   &__social-item {
     display: inline-block;
     margin: 0 25px;
@@ -133,8 +140,8 @@
   }
   &__slider {
     max-width: 560px;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       position: absolute;
       top: -15px;
       right: -17px;
@@ -168,37 +175,37 @@
   }
 }
 
-.benefits{
-  &__items{
+.benefits {
+  &__items {
     display: flex;
     flex-wrap: wrap;
     padding-left: 25px;
   }
-  &__item{
+  &__item {
     margin-bottom: 100px;
     display: flex;
     align-items: flex-end;
-    &:nth-child(even){
+    &:nth-child(even) {
       margin-left: 40px;
       transform: translateY(25px);
     }
-    &:last-child{
+    &:last-child {
       margin-left: 75px;
     }
   }
   &__item-1,
-  &__item-3{
+  &__item-3 {
     position: relative;
     &::before,
-    &::after{
-      content: "";
+    &::after {
+      content: '';
       position: absolute;
       background-position: 0 0;
       background-repeat: no-repeat;
     }
   }
-  &__item-1{
-    &::before{
+  &__item-1 {
+    &::before {
       width: 245px;
       height: 48px;
       background-image: url('../images/line-1.svg');
@@ -206,15 +213,15 @@
       top: 38px;
     }
   }
-  &__item-3{
-    &::before{
+  &__item-3 {
+    &::before {
       width: 254px;
       height: 43px;
       background-image: url('../images/line-3.svg');
       right: -80px;
       top: 50px;
     }
-    &::after{
+    &::after {
       width: 463px;
       height: 62px;
       background-image: url('../images/line-2.svg');
@@ -222,20 +229,18 @@
       top: -70px;
     }
   }
-  &__num{
+  &__num {
     line-height: 41px;
     font-size: 36px;
     @extend %ubuntu-bold;
     margin-right: 10px;
   }
 
-
-
-  &__img{
+  &__img {
     position: relative;
     margin-right: 32px;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       position: absolute;
       width: 193px;
       height: 128px;
@@ -245,84 +250,135 @@
       border: 2px solid #fff;
     }
   }
-  &__info{
+  &__info {
     width: 300px;
   }
-  &__info-title{
+  &__info-title {
     width: 123px;
     font-size: 21px;
     line-height: 24px;
   }
-  &__info-text{
+  &__info-text {
     font-size: 15px;
     line-height: 18px;
   }
 }
 
-.specification{
-  &__inner{
+.specification {
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  &__item{
-
+  &__item {
   }
-  &__box{
+  &__box {
     width: 280px;
     position: relative;
     margin-top: 10px;
-    &::before{
-      content: "";
+    &::before {
+      content: '';
       position: absolute;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
-  &__box-2{
+  &__box-2 {
     margin-top: 140px;
   }
-  &__box-4{
+  &__box-4 {
     margin-top: 160px;
   }
-  &__box-1::before{
-    
+  &__box-1::before {
+    background-image: url('../images/pointer-1.svg');
+    width: 229px;
+    height: 114px;
+    right: -140px;
+    top: 17px;
   }
-  &__box-2::before{
-
+  &__box-2::before {
+    background-image: url('../images/pointer-2.svg');
+    width: 346px;
+    height: 81px;
+    right: -320px;
+    top: -62px;
   }
-  &__box-3::before{
-
+  &__box-3::before {
+    background-image: url('../images/pointer-3.svg');
+    width: 258px;
+    height: 183px;
+    left: -282px;
+    top: 12px;
   }
-  &__box-4::before{
-
+  &__box-4::before {
+    background-image: url('../images/pointer-4.svg');
+    width: 124px;
+    height: 89px;
+    left: -138px;
+    top: -72px;
   }
 
-  &__box-title{
+  &__box-title {
     font-size: 21px;
     line-height: 28px;
     @extend %ubuntu-bold;
     margin-bottom: 10px;
   }
-  &__box-text{
+  &__box-text {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
   }
 }
 
+.questions {
+  &__items {
+    max-width: 757px;
+    padding-bottom: 15px;
+  }
+  &__item {
+    background-color: rgba(0, 0, 0, 0.3);
+    max-width: 690px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  &__item-title {
+    height: 72px;
+    line-height: 28px;
+    font-size: 21px;
+    @extend %ubuntu-medium;
+    color: rgba(#fff, 0.8);
+    padding: 20px 10px 24px 40px;
+    position: relative;
+    cursor: pointer;
+    &::after{
+      content: url('../images/accordeon-arrow.svg');
+      position: absolute;
+      width: 72px;
+      height: 67px;
+      right: -72px;
+      top: 0px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  &__item-text{
+    padding: 0 5px 75px 50px;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0;
+    display: none;
+  }
+  &__item.questions__item-active{
+    .questions__item-title::after{
+      transform: rotate(180deg);
+    }
+    .questions__item-text{
+      display: block;
+    }
+  }
+}
 
 @import 'media';
